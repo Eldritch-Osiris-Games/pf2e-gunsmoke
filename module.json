@@ -1,0 +1,74 @@
+{
+  "name": "pf2e-gunsmoke",
+  "title": "PF2e Gunsmoke",
+  "description": "A module to implement the Gunsmoke equipment options",
+  "author": "Delioth",
+  "version": "1.0.1",
+  "compatibleCoreVersion": "11",
+  "minimumCoreVersion": "9",
+  "packs": [
+    {
+      "label": "Gunsmoke - Equipment",
+      "type": "Item",
+      "name": "gunsmoke-equipment",
+      "path": "./packs/gunsmoke-equipment.db",
+      "system": "pf2e",
+      "package": "pf2e-gunsmoke",
+      "private": false
+    }
+  ],
+  "flags": {
+    "pf2e-gunsmoke": {
+      "pf2e-homebrew": {
+        "baseWeapons": {
+          "buckler-pistol": "Buckler Pistol",
+          "cattleman-revolver": "Cattleman Revolver",
+          "combat-shotgun": "Combat Shotgun",
+          "culverin": "Culverin",
+          "double-action-revolver": "Double-Action Revolver",
+          "double-barreled-shotgun": "Double-Barreled Shotgun",
+          "duckfoot-pistol": "Duckfoot Pistol",
+          "frontier-repeater": "Frontier Repeater",
+          "grapeshot-revolver": "Grapeshot Revolver",
+          "gravewalker-revolver": "Gravewalker Revolver",
+          "lasso": "Lasso",
+          "lupara": "Lupara",
+          "mares-leg": "Mare's Leg",
+          "pocket-dragoon": "Pocket Dragoon",
+          "repeater-carbine": "Repeater Carbine",
+          "rolling-block-rifle": "Rolling Block Rifle",
+          "semi-automatic-pistol": "Semi-Automatic Pistol",
+          "semi-automatic-rifle": "Semi-Automatic Rifle",
+          "semi-automatic-shotgun": "Semi-Automatic Shotgun",
+          "trappers-knife": "Trapper's Knife",
+          "varmint-rifle": "Varmint Rifle"
+        },
+        "weaponTraits": {
+          "speedloader": {
+            "label": "Speedloader",
+            "description": "A speedloader weapon is almost always one with the Capacity trait that has features that allow for swifter reloads, such as a swing out or top-break cylinder, or quickly swappable chambers, cylinders, or tube magazines. If you are wielding a Speedloader weapon and have a free hand, you may spend 3 Interact actions to fully reload the weapon, the process for which depends on the type of weapon. These actions don't need to be consecutive."
+          },
+          "capacity-2": {
+            "label": "Capacity 2",
+            "description": "PF2E.TraitDescriptionCapacity"
+          },
+          "capacity-6": {
+            "label": "Capacity 6",
+            "description": "PF2E.TraitDescriptionCapacity"
+          },
+          "capacity-10": {
+            "label": "Capacity 10",
+            "description": "PF2E.TraitDescriptionCapacity"
+          }
+        }
+      }
+    }
+  },
+  "system": [
+    "pf2e"
+  ],
+  "url": "https://github.com/Delioth/foundry-pf2e-gunsmoke",
+  "manifest": "https://raw.githubusercontent.com/Delioth/foundry-pf2e-gunsmoke/main/module.json",
+  "download": "https://github.com/Delioth/foundry-pf2e-gunsmoke/archive/refs/heads/main.zip",
+  "minimumSystemVersion": "3.10.1"
+}
