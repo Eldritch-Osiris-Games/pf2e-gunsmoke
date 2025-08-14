@@ -1,17 +1,20 @@
 {
-  "name": "pf2e-gunsmoke",
+  "id": "pf2e-gunsmoke",
   "title": "PF2e Gunsmoke",
   "description": "A module to implement the Gunsmoke equipment options",
-  "author": "Delioth",
+  "authors":[{"name": "Delioth"}],
   "version": "1.0.1",
-  "compatibleCoreVersion": "11",
-  "minimumCoreVersion": "9",
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13",
+    "maximum": "13"
+  },
   "packs": [
     {
       "label": "Gunsmoke - Equipment",
       "type": "Item",
       "name": "gunsmoke-equipment",
-      "path": "./packs/gunsmoke-equipment.db",
+      "path": "/packs/gunsmoke-equipment.db",
       "system": "pf2e",
       "package": "pf2e-gunsmoke",
       "private": false
@@ -64,11 +67,18 @@
       }
     }
   },
-  "system": [
-    "pf2e"
-  ],
+    "relationships": {
+        "systems": [
+            {
+                "id": "pf2e",
+                "type": "system",
+                "manifest": "https://raw.githubusercontent.com/foundryvtt/pf2e/master/system.json",
+                "compatibility": {
+                    "minimum": "7.1.0"
+                }
+            }
+	]},
   "url": "https://github.com/Delioth/foundry-pf2e-gunsmoke",
-  "manifest": "https://raw.githubusercontent.com/Delioth/foundry-pf2e-gunsmoke/main/module.json",
-  "download": "https://github.com/Delioth/foundry-pf2e-gunsmoke/archive/refs/heads/main.zip",
-  "minimumSystemVersion": "3.10.1"
+  "manifest": "https://github.com/Eldritch-Osiris-Games/pf2e-gunsmoke/releases/download/1.2.0/module.json",
+  "download": "https://github.com/Eldritch-Osiris-Games/pf2e-gunsmoke/releases/download/1.2.0/pf2e-gunsmoke.zip"
 }
